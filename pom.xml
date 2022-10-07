@@ -12,6 +12,7 @@
     <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
     <maven.compiler.source>19</maven.compiler.source>
     <maven.compiler.target>19</maven.compiler.target>
+    <java.servlet.api.version>4.0.1</java.servlet.api.version>
   </properties>
   <dependencies>
     <dependency>
@@ -45,6 +46,13 @@
       <artifactId>thymeleaf-spring5</artifactId>
       <version>${thymeleaf.version}</version>
     </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>${java.servlet.api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>spring-mvc-application</finalName>
